@@ -1,4 +1,4 @@
-# TP-api-kindergarden
+# TP Validator
 
 > Travail pratique en Node.js — Simulation d’un objet connecté avec validation et visualisation des données.
 
