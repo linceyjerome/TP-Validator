@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Visualization</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualisation IoT</title>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet" />
 </head>
 
-<body>
-    <h1>Données en temps réelle</h1>
-    <svg width="800" height="400"></svg>
+<body class="bg-gradient-to-br from-gray-100 to-blue-50 min-h-screen flex flex-col items-center p-6">
+    <h1 class="text-4xl font-bold text-blue-700 mb-6 drop-shadow">🌡️ Données en temps réel</h1>
+
+    <div class="w-full max-w-6xl bg-white rounded-xl shadow-xl p-6 border border-blue-200 transition hover:shadow-2xl">
+        <p class="text-sm text-gray-500 mb-3">Affichage des 20 dernières mesures de température (en °C)</p>
+
+        <div class="overflow-x-auto">
+            <svg width="900" height="400" class="mx-auto block"></svg>
+        </div>
+    </div>
+
+    <footer class="mt-6 text-red-500 text-xs">TP — Lincey © 2025</footer>
+
     <script src="script.js"></script>
 </body>
 
